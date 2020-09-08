@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright GearEight Games UG (haftungsbeschränkt). All Rights Reserved.
+
+using System;
 using System.Collections.Generic;
 
 namespace G8G.PerformanceBooster.Collections
@@ -15,20 +17,14 @@ namespace G8G.PerformanceBooster.Collections
         /// Default if list is empty.
         /// </summary>
         /// <returns>The last element of the list or the default value, if the list is empty.</returns>
-        public T Last()
-        {
-            return Count == 0 ? default(T) : this[Count - 1];
-        }
+        public T Last() => Count == 0 ? default : this[Count - 1];
 
         /// <summary>
         /// Returns the first element in the list.
         /// Default if the list is empty.
         /// </summary>
         /// <returns>The first element in the list or the default value, if the list is empty.</returns>
-        public T First()
-        {
-            return Count == 0 ? default(T) : this[0];
-        }
+        public T First() => Count == 0 ? default : this[0];
 
         /// <summary>
         /// Returns the amount of elements that match the predicate.
@@ -64,7 +60,7 @@ namespace G8G.PerformanceBooster.Collections
                         return this[i];
                 }
             }
-            return default(T);
+            return default;
         }
 
         /// <summary>

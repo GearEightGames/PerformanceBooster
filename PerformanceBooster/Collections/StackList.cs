@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// Copyright GearEight Games UG (haftungsbeschränkt). All Rights Reserved.
+
+using System;
 
 namespace G8G.PerformanceBooster.Collections
 {
@@ -16,10 +16,7 @@ namespace G8G.PerformanceBooster.Collections
         /// Inserts an object at the top of the <see cref="StackList{T}"/>.
         /// </summary>
         /// <param name="value">The element to push onto the <see cref="StackList{T}"/></param>
-        public void Push(T value)
-        {
-            Add(value);
-        }
+        public void Push(T value) => Add(value);
 
         /// <summary>
         /// Removes and returns the object at the top of the <see cref="StackList{T}"/>
@@ -46,9 +43,6 @@ namespace G8G.PerformanceBooster.Collections
         /// This method is an O(1) operation.
         /// </remarks>
         /// <returns>The object at the top of the <see cref="StackList{T}"/>.</returns>
-        public T Peek()
-        {
-            return Last();
-        }
+        public T Peek() => Last();
     }
 }

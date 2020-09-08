@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright GearEight Games UG (haftungsbeschränkt). All Rights Reserved.
+
+using System;
 using System.Collections.Generic;
 
 namespace G8G.PerformanceBooster.Extensions
@@ -14,20 +16,14 @@ namespace G8G.PerformanceBooster.Extensions
         /// Default if list is empty.
         /// </summary>
         /// <returns>The last element of the list or the default value, if the list is empty.</returns>
-        public static T Last<T>(this IList<T> list)
-        {
-            return list.Count == 0 ? default(T) : list[list.Count - 1];
-        }
+        public static T Last<T>(this IList<T> list) => list.Count == 0 ? default : list[list.Count - 1];
 
         /// <summary>
         /// Returns the first element in the list.
         /// Default if the list is empty.
         /// </summary>
         /// <returns>The first element in the list or the default value, if the list is empty.</returns>
-        public static T First<T>(this IList<T> list)
-        {
-            return list.Count == 0 ? default(T) : list[0];
-        }
+        public static T First<T>(this IList<T> list) => list.Count == 0 ? default : list[0];
 
         /// <summary>
         /// Returns the amount of elements that match the predicate.
@@ -63,7 +59,7 @@ namespace G8G.PerformanceBooster.Extensions
                         return list[i];
                 }
             }
-            return default(T);
+            return default;
         }
 
         /// <summary>
@@ -117,9 +113,6 @@ namespace G8G.PerformanceBooster.Extensions
         /// Removes the last element.
         /// </summary>
         /// <returns>True when the element could be removed</returns>
-        public static void RemoveLast<T>(this IList<T> list)
-        {
-            list.RemoveAt(list.Count - 1);
-        }
+        public static void RemoveLast<T>(this IList<T> list) => list.RemoveAt(list.Count - 1);
     }
 }

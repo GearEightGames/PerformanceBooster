@@ -3,6 +3,23 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>G8G.PerformanceBooster</RootNamespace>
+    <Authors>GearEight Games UG (haftungsbeschränkt)</Authors>
+    <Company>GearEight Games UG (haftungsbeschränkt)</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>G8G.PerformanceBooster</Product>
+    <PackageId>G8G.PerformanceBooster</PackageId>
+    <Description>The GearEight Games Performance boost library is a .Net library designed to be used in software where performance is key (like games).</Description>
+    <Copyright>2020 GearEight Games UG (haftungsbeschränkt)</Copyright>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/GearEightGames/PerformanceBooster</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
